@@ -149,7 +149,6 @@ body{
 
 /* Nav Start */
 .nav-content{
-   position: fixed;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -158,6 +157,7 @@ body{
 }
 
 .navigation ul{
+   position: fixed;
    position: relative;
    display: flex;
    left: 130%;
