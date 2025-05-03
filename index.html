@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>My new website</title>
+   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+   <script src="https://kit.fontawesome.com/673a4a92e3.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <section class="nav-content">
+       <!-- Menu bar Start -->
+       <div class="menu-toggle" id="menuToggle">
+         <span></span>
+         <span></span>
+         <span></span>
+     </div>
+     
+     <nav class="menu-items" id="menuItems">
+         <ul>
+            <img src="logo1.png" alt="">
+            
+           <i class="fa fa-home" aria-hidden="true"></i> <li><a href="#Home">Home</a></li>
+           <i class="fa-solid fa-database"></i><li><a href="#Services">Services</a></li>          
+           <i class="fa-solid fa-address-card"></i><li><a href="#About">About</a></li>          
+           <i class="fa-solid fa-id-card-clip"></i></i><li><a href="#Contact">Contact</a></li>         
+           <i class="fa-solid fa-shop-lock"></i><li><a href="privacy.html">Privacy</a></li>
+         </ul>
+     </nav>
+     
+     <script>
+         const menuToggle = document.getElementById('menuToggle');
+         const menuItems = document.getElementById('menuItems');
+         
+         menuToggle.addEventListener('click', () => {
+             menuToggle.classList.toggle('active');
+             menuItems.classList.toggle('active');
+         });
+     </script>
+    <!-- Menu bar End -->
+
+   
+     <!-- Nav Start -->
+      <div class="navigation">
+         <div class="logo">
+         <img src="logo.jpg" width="50" border-redius:50%; alt="Abdul Aziz (web designer)">
+      </div>
+      <ul>
+         <li><a href="#Home">Home</a></li>
+         <li><a href="#Services">Services</a></li>
+         <li><a href="#About">About</a></li>
+         <li><a href="#Contact">Contact</a></li>
+      </ul>
+      </div>
+      
+   </section>
+     <!-- Nav End -->
+      <!--Hero Section Start  -->
+      <section class="hero" id="Home">
+        <div class="hero-content">
+          <h2>Welcome to Azigiza Junior Webtsite</h2>
+          <p>The number one web designer who can change your bussiner website to nomey</p>
+          <button><a class="ctn" href="#Contact">Get intouch</a></button>
+        </div>
+      </section>
+      <!--Hero Section ENd  -->
+
+      <!-- Maim Section Start  -->
+   <section class="main-section">
+       <div class="my-site">
+      <div class="content-container">
+         <img class="my-logo" src="logo1.png">
+      </div>
+      <div class="content-container title-two">
+        <h1>"Hello! I'm Azigiza Junior</h1>
+        <i>Web Designer | Digital Craftsman | Problem Solver</i>
+         <p>I transform ideas into pixel-perfect, user-friendly digital experiences. With a keen eye for aesthetics and a passion for functional design, 
+          I specialize in creating websites that not only look 
+          stunning but deliver seamless interactions.</p>
+          <p>My approach blends:</p>
+          <p>🎨 Creative Design Thinking</p>
+          <p>💻 Clean, Efficient Code</p>
+          <p>📱 Responsive, Mobile-First Philosophy</p>
+      </div>
+   </section>
+ <!-- Maim Section End  -->
+      <section class="cards-section " id="Services">        
+         <h1>Services</h1>
+        <div class="card-section-content">
+          <div class="cards">
+            <div class="cards-titles">
+               <i class="fas fa-laptop-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Custom, responsive websites designed with your brand and audience in mind. Beautiful aesthetics meets functional design.</p>
+            </div>
+         </div>
+         <div class="cards">
+            <div class="cards-titles">
+               <i class="fas fa-mobile-alt"></i>
+               <h2>Mobile-First Design</h2>
+                  <p>Websites that look and perform beautifully on all devices, with mobile users as the priority.</p>
+            </div>
+         </div>
+         <div class="cards">
+            <div class="cards-titles">
+               <i class="fas fa-search"></i>
+               <h2>SEO Optimization</h2>
+               <p>Websites built with search engine optimization in mind to help you rank higher and get found.</p>
+            </div>
+         </div>
+        </div>
+      </section>
+      
+      <section class="contact-section" id="About">
+            <div class="contact-content">
+               <div class="contact-card">
+                   <h2>Contact us through the links below.</h2>
+             <a href="#">WhatsApp</a><i class="fa fa-whatsapp" aria-hidden="true"></i>
+             <a href="#">Facebook</a><i class="fa fa-facebook-official" aria-hidden="true"></i>
+             <a href="#">Instagram</a><i class="fa fa-instagram" aria-hidden="true"></i>
+             <a href="#">Twitter (X)</a><i class="fa fa-twitter" aria-hidden="true"></i>
+             <a href="#">LindIn</a><i class="fa fa-linkedin" aria-hidden="true"></i>
+             <a href="#">YouTube </a><i class="fa fa-youtube" aria-hidden="true"></i>
+             <a href="#">Github</a><i class="fa fa-github" aria-hidden="true"></i>
+            </div>
+         </div>
+         <div class="contact-content">
+         <div class="contact-card" id="Contact">
+            <h5>Kindly fill out the form below for any inquries.</h5>
+            <form action="https://formsubmit.co/juniorazigiza@gmail.com" method="post">
+               <label for="Fullname">FullName</label>
+               <input type="text" id="Fullname" required><i class="fa-solid fa-user-large"></i>
+               <label for="Email">Email Address</label>
+               <input type="email" id="Email" required><i class="fa fa-envelope" aria-hidden="true"></i>
+               <label for="Message">Input Message</label>
+               <textarea class="textarr" name="Message" id="Message" cols="30" rows="5" wrap="hard"></textarea>
+               <button class="btn" type="submit">Submit</button>
+            </form>
+         </div>
+      </section>
+
+     <footer>
+       <div class="footer-sec">
+         &copy; 2025 All Rights Reserved | Design By<span class="designer">Azigiza <span class="designer2">Junior</span></span>
+         <hr>
+       </div>
+       <div class="footer-icons">
+         <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a>
+         <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+       </div> 
+       
+     </footer>
+</body>
+</html>
